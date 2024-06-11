@@ -1,0 +1,41 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/06/11 16:27:20 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/11 17:59:10 by bachai           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+void	*ft_memmove( void *dst, const void *src, size_t len)
+{
+	char *tmp_src;
+	char *tmp_dst;
+	size_t i;
+
+	if(!src && !dst)
+		return (NULL);
+	tmp_src = (char *)src;
+	tmp_dst = (char *)dst;
+	i = 0;
+
+	if(tmp_dst > tmp_src)
+	{
+		while(len-- > 0)
+		{
+			tmp_dst[len] = tmp_src[len];
+		}
+	}
+	else
+	{
+		while(i < len)
+		{
+			tmp_dst[i] = tmp_src[i];
+			i++;
+		}
+	}
+	return (dst);
+} 
