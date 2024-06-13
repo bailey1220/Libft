@@ -1,25 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/12 14:10:32 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/12 14:18:12 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/13 14:03:25 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/13 16:21:16 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+int    ft_atoi(const char *str)
 {
-	size_t count;
+	int i;
+	int result;
+	int sign;
 
-	count = 0;
-	if(size == 0)
-		return (ft_strlcpy(src));
-	while (src != \0 && count < (size - 1))
-		dst[count] = src[count];
-		count++;
-	dst = '\0';
-	return (ft_strlcpy(src));
+	i = 0;
+	result = 0;
+	sign = 1;
+	while(str[i] == 32 || str[i] >= 9 && str[i] <= 13)
+		i++;
+	if(str[i] == '+' || str[i] == '-')
+	{
+		if(str[i == '-')
+			sign = -1;
+		i++;
+	}
+	while(str[i] >= '0' && str[i] <= '9')
+	{
+		result = result * 10 +(str[i] - 0);
+		i++;
+	}
+	result(result * sign);
 }

@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/12 14:10:32 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/12 14:18:12 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/13 11:44:56 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/13 12:18:39 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+void *ft_memchr(const void *s, int c, size_t n)
 {
-	size_t count;
+	unsigned char *str;
+	unsigned char c;
+	size_t i;
 
-	count = 0;
-	if(size == 0)
-		return (ft_strlcpy(src));
-	while (src != \0 && count < (size - 1))
-		dst[count] = src[count];
-		count++;
-	dst = '\0';
-	return (ft_strlcpy(src));
+	str = (unsigend char *)str;
+	c = (unsigned char )c;
+	i = 0;
+
+	while(i < n)
+	{
+		if(str[i] == c)
+			return ((void *)&str[i]);
+		i++
+	}
+	return(NULL);
 }
