@@ -1,27 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 16:26:51 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/16 16:45:27 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/16 16:46:44 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/16 17:00:18 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_calloc(size_t count, size_t size)
+char *ft_strdup(const char *s1)
 {
-	unsigned char *tmp;
+	char *dest;
 	size_t i;
+	size_t len;
 
-	i = 0;
-	tmp = malloc(count * size);
+	len = 0;
+	while (s1[len] != '\0')
+		len++;
 
-	if(!tmp)
+	dest = (char*) malloc((len + 1) * sizeof(char));
+	if(!dest)
 		return (NULL);
 
-	while(i < count * size)
-		tmp[i++] = 0;
-	return (tmp);
+	i = 0; 
+	while(i < len)
+	{
+		dest[i] = s1[i];
+		i++;
+	}
+	dest[len] = '\0';
+
+	return (dest);
 }
