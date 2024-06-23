@@ -5,16 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 14:21:29 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/05 15:20:11 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/23 12:15:09 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/23 16:05:07 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include
+#include "libft.h"
 
-int ft_isalnum(int a)
+int	ft_isalnum(int i)
 {
-    if(a <= 65 && a >= 90) || (a >= 97 && a <= 122) || (a >= 48 && a <= )
-        return (1);
-    return (0);
+	if (i >= '0' && i <= '9')
+		return (1);
+	if (i >= 'A' && i <= 'Z')
+		return (1);
+	if (i >= 'a' && i <= 'z')
+		return (1);
+	return (0);
 }

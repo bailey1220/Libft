@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/06 15:50:22 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/06 15:54:19 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/23 12:14:04 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/23 16:05:00 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include
+#include "libft.h"
 
-void    ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	char tmp*;
+	char	tmp*;
 
 	tmp = (char *)s;
 	while (n > 0)

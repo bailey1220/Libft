@@ -5,19 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 15:41:19 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/05 16:01:23 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/23 12:27:47 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/23 16:06:41 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include
+#include "libft.h"
 
-int ft_strlen(const char *str)
+int	ft_strlen(const char *str)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if(str[i])
-        i++;
-    return (i);
+	i = 0;
+	if (str[i])
+		i++;
+	return (i);
 }

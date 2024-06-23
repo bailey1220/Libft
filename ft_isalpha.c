@@ -5,26 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 13:37:13 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/05 15:21:16 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/23 12:15:40 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/23 16:05:17 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
-int ft_isalpha(int a)
+int	ft_isalpha(int i)
 {
-    if(a >= 65 && a <= 90) || (a >= 97 && a <= 122)
-      return (1);
-    return (0);
-}
-
-int main()
-{
-    int a; 
-    a = 'H';
-
-    printf("Result:")
-
+	if (i >= 65 && i <= 90)
+		return (1);
+	if (i >= 97 && i <= 122)
+		return (1);
+	return (0);
 }

@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/18 15:54:45 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/18 16:08:59 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/23 13:53:17 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/23 16:05:57 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include 
+#include "libft.h"
 
 void ft_putchar_fd(char c, int fd)
 {
-	write(fd,  )
+	write(fd, &c, 1);
 }

@@ -5,14 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/12 15:56:10 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/12 15:57:50 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/23 12:33:15 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/23 16:07:03 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int c)
+#include "libft.h"
+
+int	ft_tolower(int i)
 {
-	if(c >= 65 && c <= 90)
-		return (c + 32);
-	return (c);
+	if (i >= 65 && i <= 90)
+		return (i + 32);
+	return (i);
 }

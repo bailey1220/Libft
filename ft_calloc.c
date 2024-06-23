@@ -5,23 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 16:26:51 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/16 16:45:27 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/23 12:14:40 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/23 16:05:04 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_calloc(size_t count, size_t size)
+#include "libft.h"
+
+void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned char *tmp;
-	size_t i;
+	unsigned char	*tmp;
+	size_t			i;
 
 	i = 0;
-	tmp = malloc(count * size);
-
-	if(!tmp)
+	tmp = malloc (count * size);
+	if (!tmp)
 		return (NULL);
-
-	while(i < count * size)
+	while (i < count * size)
 		tmp[i++] = 0;
 	return (tmp);
 }

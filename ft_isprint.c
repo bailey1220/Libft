@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/05 15:38:36 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/05 16:01:20 by bachai           ###   ########.fr       */
+/*   Created: 2024/06/23 12:17:12 by bachai            #+#    #+#             */
+/*   Updated: 2024/06/23 16:05:26 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include
+#include "libft.h"
 
-int ft_isprint(int a)
+int	ft_isprint(int i)
 {
-    if(a >= 32 && a <= 126)
-        return (1);
-    return (0);
+	if (i >= 32 && i <= 126)
+		return (1);
+	return (0);
 }
