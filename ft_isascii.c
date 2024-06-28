@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:16:16 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:05:21 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 11:43:15 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,9 @@ int	ft_isascii(int i)
 		return (1);
 	return (0);
 }
+/*int	main(void)
+{
+	int	asc = 127;
+	
+	printf("%d", ft_isascii(asc));
+}*/

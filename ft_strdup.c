@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:24:36 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:06:25 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 11:45:56 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,9 @@ char	*ft_strdup(const char *s1)
 	dest[len] = '\0';
 	return (dest);
 }
+/*int	main(void)
+{
+	char str[] = "Hello";
+
+	printf("%s\n", ft_strdup(str));
+}*/

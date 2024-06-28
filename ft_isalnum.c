@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:15:09 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:05:07 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 11:42:51 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,3 +22,10 @@ int	ft_isalnum(int i)
 		return (1);
 	return (0);
 }
+
+/*int	main(void)
+{
+	int	c = 'a';
+
+	printf("%d", ft_isalnum(c));
+}*/

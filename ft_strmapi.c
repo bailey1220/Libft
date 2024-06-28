@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 14:03:22 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:06:44 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 11:47:24 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,16 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	res[len] = '\0';
 	return (res);
 }
+// char	any(unsigned int i, char c)
+// {
+// 	if (c >= 'a' && c <= 'z')
+// 		return (c - 32);
+// 	else if (c >= 'A' && c <= 'Z')
+// 		return (c + 32);
+// 	return (c);
+// }
+
+// int	main(void)
+// {
+// 	printf("%s", ft_strmapi("Hello", &any));
+// }

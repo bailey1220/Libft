@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:30:01 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:06:54 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 12:03:38 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	unsigned int 	i;
-	char		c;
-	char		*res;
+	unsigned int	i;
+	char			cc;
+	char			*res;
 
 	i = 0;
 	cc = (char)c;
@@ -31,3 +31,8 @@ char	*ft_strrchr(const char *s, int c)
 		res = (char *)&s[i];
 	return (res);
 }
+/*int	main(void)
+{
+	char str[] = "www.gmail.com";
+	printf("%s", ft_strrchr(str, '-'));
+}*/

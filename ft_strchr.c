@@ -6,19 +6,19 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:23:35 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:06:20 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 12:18:10 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strchr(const char *s, int i)
+char	*ft_strchr(const char *s, int c)
 {
 	int		i;
 	char	cc;
 
 	i = 0;
-	cc = (char)i;
+	cc = (char)c;
 	while (s[i])
 	{
 		if (s[i] == cc)
@@ -30,21 +30,8 @@ char	*strchr(const char *s, int i)
 	return (NULL);
 }
 
-#include <stdio.h> 
-
-char	*ft_strchr(const char *s, int i)
+/*int	main(void)
 {
-	char	cc;
-
-	cc = (char)c;
-	while (*s)
-	{
-		if (*s == cc)
-			return ((char *)s);
-		s++;
-	}
-	if (*s == cc)
-		return ((char *)s);
-	return (NULL);
-}
-
+	char str[] = "www.youtubecom";
+	printf("%s", ft_strchr(str, 'w'));
+}*/

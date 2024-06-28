@@ -6,20 +6,20 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:21:03 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:05:47 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 12:54:45 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*t_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	unsigned char	*tmp_dst;
 	unsigned char	*tmp_src;
 
-	if (dest == (void *)0 || src == (void *)0)
-		return (dest);
-	tmp_dest = (unsigned char *)dst;
+	if (dst == (void *)0 || src == (void *)0)
+		return (dst);
+	tmp_dst = (unsigned char *)dst;
 	tmp_src = (unsigned char *)src;
 	while (n > 0)
 	{
@@ -28,3 +28,10 @@ void	*t_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+// int	main(void)
+// {
+// 	char	source[] = "Hello World";
+// 	char	destination[] = "Hello World";
+
+// 	printf("%s", memcpy(destination+2, source, sizeof(source)-2));
+// }

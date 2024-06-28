@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:33:15 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:07:03 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 11:48:48 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,7 @@ int	ft_tolower(int i)
 		return (i + 32);
 	return (i);
 }
+/*int	main(void)
+{
+	printf("%c\n", ft_tolower('C'));
+}*/

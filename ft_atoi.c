@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:13:10 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:04:56 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 13:18:50 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,13 @@ int	ft_atoi(const char *str)
 		result = result * 10 + (str[i] - '0');
 		i++;
 	}
-	result (result * sign);
+	return (result * sign);
 }
+
+/*int	main(void)
+{
+	char str[] = "     -4a2    ";
+
+	printf("%d\n", ft_atoi(str));
+	printf("%d\n", atoi(str));
+}*/

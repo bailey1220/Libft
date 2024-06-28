@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:30:47 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:06:57 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 12:01:21 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,3 +45,11 @@ char	*ft_strtrim(const char *s1, const char *set)
 	ft_strlcpy (trimmed_str, &s1[start], len + 1);
 	return (trimmed_str);
 }
+/*
+int	main(void)
+{
+	char	str[] = "$(echo( \"hello world\")";
+
+	printf("%s\n", ft_strtrim(str, "$()"));
+}
+*/

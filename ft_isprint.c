@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:17:12 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:05:26 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 11:43:46 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,9 @@ int	ft_isprint(int i)
 		return (1);
 	return (0);
 }
+/*int	main(void)
+{
+	int	arg = 127;
+	
+	printf("%d", ft_isprint(arg));
+}*/

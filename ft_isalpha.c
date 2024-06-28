@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:15:40 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:05:17 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 15:22:44 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,14 @@
 
 int	ft_isalpha(int i)
 {
-	if (i >= 65 && i <= 90)
+	if (i >= 'A' && i <= 'Z')
 		return (1);
-	if (i >= 97 && i <= 122)
+	if (i >= 'a' && i <= 'z')
 		return (1);
 	return (0);
 }
+/*int	main(void)
+{
+	int	a = 'g';
+	printf("%d", ft_isalpha(a));
+}*/

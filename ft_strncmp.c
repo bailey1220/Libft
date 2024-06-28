@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:28:16 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:06:47 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 11:47:35 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,11 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
+/*int	main(void)
+{
+	char str1[] = "Hello";
+	char str2[20] = "Yello";
+	unsigned int	i = 3;
+
+	printf("%d\n", ft_strncmp(str1, str2, i));
+}*/

@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:21:53 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:05:51 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 11:44:54 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,3 +38,10 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+// int	main(void)
+// {
+// 	char	dest[50] = "World";
+// 	char	src[50] = "Hello World";
+// 	ft_memmove(dest, src, 5);
+// 	printf("%s", dest);
+// }

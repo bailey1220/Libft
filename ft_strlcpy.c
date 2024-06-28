@@ -6,22 +6,39 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:26:58 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/23 16:06:37 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/28 17:24:52 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+int	ft_strlcpy(char *dest, const char *src, unsigned int size)
 {
-	size_t	count;
+	unsigned int	i;
 
-	count = 0;
-	if (size == 0)
-		return (ft_strlcpy(src));
-	while (src != \0 && count < (size - 1))
-		dst[count] = src[count];
-		count++;
-	dst = '\0';
-	return (ft_strlcpy(src));
+	if (!size)
+		return (ft_strlen(src));
+	i = 0;
+	if (size > 0)
+	{
+		while (i < (size - 1) && src[i] != '\0')
+		{
+			dest[i] = src[i];
+			i++;
+		}
+	}
+	dest[i] = '\0';
+	while (src[i])
+		i++;
+	return (i);
 }
+
+// int	main(void)
+// {
+// 	char	dst[] = "Hell0";
+// 	char	src[5];
+// 	unsigned int size = 10;
+
+// 	printf("%d\n", ft_strlcpy(src, dst, size));
+// 	printf("%s", src);
+// }
