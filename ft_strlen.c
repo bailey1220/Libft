@@ -6,7 +6,7 @@
 /*   By: bachai <bachai@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/23 12:27:47 by bachai            #+#    #+#             */
-/*   Updated: 2024/06/28 15:39:07 by bachai           ###   ########.fr       */
+/*   Updated: 2024/06/30 17:08:36 by bachai           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ size_t	ft_strlen(const char *str)
 	size_t	i;
 
 	i = 0;
-	if (str[i])
+	while (str[i])
 		i++;
 	return (i);
 }
